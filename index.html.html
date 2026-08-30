@@ -1,0 +1,1258 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Fernandes Putra Pasaribu - Praktisi Digital Marketing</title>
+    <meta name="google-site-verification" content="uRJCdLobU3pCPkdVrKRZHzXPS1UdWhdpG2O1BKKX5N8" />
+   <meta name="description" content="Praktisi &amp; konsultan Digital Marketing Medan dengan pengalaman lebih dari 4 tahun. Lulusan Teknik Informatika yang menggabungkan analisis data performa iklan (Meta, Google &amp; TikTok Ads) dengan kreativitas eksekusi konten digital.">
+
+    <!-- FAVICON LOGO (F) UNTUK TAB BROWSER -->
+    <link rel="icon" type="image/jpeg" href="https://fernandesputra.my.id/wp-content/uploads/2026/08/cropped-cropped-iconlogoweb.jpg">
+    <link rel="shortcut icon" href="https://fernandesputra.my.id/wp-content/uploads/2026/08/cropped-cropped-iconlogoweb.jpg">
+    <link rel="apple-touch-icon" href="https://fernandesputra.my.id/wp-content/uploads/2026/08/cropped-cropped-iconlogoweb.jpg">
+
+    <!-- META TAGS LINK PREVIEW (WHATSAPP, LINKEDIN & MEDSOS) -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fernandesputra.my.id/">
+    <meta property="og:title" content="Fernandes Putra Pasaribu - Praktisi Digital Marketing">
+    <meta property="og:description" content="Praktisi &amp; konsultan Digital Marketing Medan dengan pengalaman lebih dari 4 tahun. Lulusan Teknik Informatika yang menggabungkan analisis data performa iklan (Meta, Google &amp; TikTok Ads) dengan kreativitas eksekusi konten digital.">
+    <meta property="og:image" content="https://fernandesputra.my.id/wp-content/uploads/2026/08/Foto-Profile.png">
+    <meta property="og:image:secure_url" content="https://fernandesputra.my.id/wp-content/uploads/2026/08/Foto-Profile.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="600">
+    <meta property="og:image:height" content="600">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Fernandes Putra Pasaribu - Praktisi Digital Marketing">
+    <meta name="twitter:description" content="Praktisi &amp; konsultan Digital Marketing Medan dengan pengalaman lebih dari 4 tahun. Lulusan Teknik Informatika yang menggabungkan analisis data performa iklan (Meta, Google &amp; TikTok Ads) dengan kreativitas eksekusi konten digital.">
+    <meta name="twitter:image" content="https://fernandesputra.my.id/wp-content/uploads/2026/08/Foto-Profile.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chart.js CDN for Ads Analytics Visualizer -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <!-- Tailwind Custom Configuration -->
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#f0f7ff',
+                            100: '#e0effe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            accent: '#f59e0b',
+                            emerald: '#10b981',
+                            dark: '#0b0f17',
+                            card: '#131b2e',
+                            border: '#1f293d'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #0b0f17;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+
+        /* Glassmorphism utility */
+        .glass-card {
+            background: rgba(19, 27, 46, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(59, 130, 246, 0.3);
+            box-shadow: 0 10px 30px -10px rgba(59, 130, 246, 0.2);
+        }
+
+        .glass-nav {
+            background: rgba(11, 15, 23, 0.85);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Custom Gradients */
+        .gradient-text {
+            background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #f59e0b 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .gradient-glow {
+            position: absolute;
+            width: 350px;
+            height: 350px;
+            background: radial-gradient(circle, rgba(59,130,246,0.15) 0%, rgba(0,0,0,0) 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+
+        /* Timeline connector styling */
+        .timeline-line::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 20px;
+            width: 2px;
+            background: linear-gradient(180deg, #3b82f6 0%, rgba(59,130,246,0.1) 100%);
+        }
+
+        @media (min-width: 768px) {
+            .timeline-line::before {
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0b0f17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f293d;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #3b82f6;
+        }
+    </style>
+</head>
+<body class="antialiased text-slate-300">
+
+    <!-- NAVIGATION BAR -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-nav transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo / Name -->
+            <a href="#hero" class="flex items-center gap-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-amber-500 flex items-center justify-center text-white font-extrabold text-xl shadow-lg shadow-blue-500/20 group-hover:scale-105 transition-transform">
+                    F
+                </div>
+                <div>
+                    <span class="text-lg font-bold text-white tracking-wide block leading-tight">Fernandes Putra</span>
+                    <span class="text-xs text-blue-400 font-medium">PRAKTISI DIGITAL MARKETING</span>
+                </div>
+            </a>
+
+            <!-- Desktop Menu Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="#about" class="hover:text-blue-400 transition-colors">Tentang Saya</a>
+                <a href="#skills" class="hover:text-blue-400 transition-colors">Keahlian</a>
+                <a href="#experience" class="hover:text-blue-400 transition-colors">Pengalaman</a>
+                <a href="#projects" class="hover:text-blue-400 transition-colors">Proyek & Brand</a>
+                <a href="#analytics" class="hover:text-blue-400 transition-colors">Performa Iklan</a>
+                <a href="#education" class="hover:text-blue-400 transition-colors">Pendidikan</a>
+              <a href="/artikel/" class="hover:text-blue-400 transition-colors">Artikel</a>
+            </nav>
+
+            <!-- Call To Action & Mobile Toggle -->
+            <div class="flex items-center gap-4">
+                <a href="#contact" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 hover:bg-blue-500 text-white font-semibold text-sm transition-all shadow-lg shadow-blue-600/30 hover:shadow-blue-500/50 hover:-translate-y-0.5">
+                    <i class="fa-solid fa-paper-plane text-xs"></i> Hubungi Saya
+                </a>
+                
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-slate-300 hover:text-white hover:bg-slate-800 transition-colors" aria-label="Toggle Menu">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-800 bg-brand-dark px-6 py-6 space-y-4">
+            <a href="#about" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Tentang Saya</a>
+            <a href="#skills" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Keahlian</a>
+            <a href="#experience" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Pengalaman</a>
+            <a href="#projects" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Proyek & Brand</a>
+            <a href="#analytics" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Performa Iklan</a>
+            <a href="#education" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Pendidikan</a>
+          <a href="/artikel/" class="block text-slate-300 hover:text-blue-400 font-medium py-1">Artikel</a>
+            <a href="#contact" class="inline-block w-full text-center py-3 rounded-xl bg-blue-600 text-white font-semibold shadow-lg">Hubungi Saya</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="relative pt-32 pb-20 md:pt-44 md:pb-32 overflow-hidden">
+        <!-- Glow Orbs -->
+        <div class="gradient-glow top-10 -left-20"></div>
+        <div class="gradient-glow bottom-10 right-0 !bg-amber-500/10"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Left Column Text -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    
+                    <!-- Availability Badge -->
+                    <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-blue-500/30 text-blue-400 text-xs sm:text-sm font-semibold">
+                        <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-ping"></span>
+                        <span>Head of Digital Marketing & Growth Strategist</span>
+                    </div>
+
+                    <!-- Main Headline -->
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight">
+                        Halo, Saya <br class="hidden sm:inline">
+                        <span class="gradient-text">Fernandes Putra Pasaribu</span>
+                    </h1>
+
+                    <!-- Description -->
+<p class="text-base sm:text-lg text-slate-300 leading-relaxed max-w-2xl">
+  Praktisi &amp; konsultan Digital Marketing Medan dengan pengalaman lebih dari 4 tahun. Lulusan Teknik Informatika yang menggabungkan analisis data performa iklan (Meta, Google &amp; TikTok Ads) dengan kreativitas eksekusi konten digital.
+</p>
+
+                    <!-- Quick Tag List -->
+                    <div class="flex flex-wrap justify-center lg:justify-start gap-2 pt-2">
+                        <span class="px-3 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs border border-slate-700/50"><i class="fa-solid fa-bullseye text-blue-400 mr-1.5"></i> Meta Ads</span>
+                        <span class="px-3 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs border border-slate-700/50"><i class="fa-brands fa-google text-amber-400 mr-1.5"></i> Google Ads</span>
+                        <span class="px-3 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs border border-slate-700/50"><i class="fa-brands fa-tiktok text-slate-200 mr-1.5"></i> TikTok Ads</span>
+                        <span class="px-3 py-1 rounded-md bg-slate-800/80 text-slate-300 text-xs border border-slate-700/50"><i class="fa-solid fa-video text-purple-400 mr-1.5"></i> Videografi & Content Creator</span>
+                    </div>
+
+                    <!-- Hero Actions CTA -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#projects" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white font-bold text-center shadow-lg shadow-blue-600/30 hover:scale-105 transition-all">
+                            Lihat Portfolio Brand <i class="fa-solid fa-arrow-right ml-2 text-sm"></i>
+                        </a>
+                        <a href="#analytics" class="w-full sm:w-auto px-8 py-4 rounded-xl glass-card text-slate-200 hover:text-white hover:bg-slate-800/80 font-semibold text-center border border-slate-700 transition-all">
+                            <i class="fa-solid fa-chart-line text-blue-400 mr-2"></i> Performa Kampanye
+                        </a>
+                    </div>
+
+                    <!-- Quick Stats Counter Grid -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800/80">
+                        <div class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-white count-up" data-target="4">4+</div>
+                            <div class="text-xs text-slate-400 mt-1">Tahun Pengalaman</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-blue-400">3+</div>
+                            <div class="text-xs text-slate-400 mt-1">Brand Property Proyek</div>
+                        </div>
+                        <div class="p-3 rounded-xl bg-slate-900/40 border border-slate-800/60">
+                            <div class="text-2xl sm:text-3xl font-extrabold text-amber-400">100K+</div>
+                            <div class="text-xs text-slate-400 mt-1">Organik & Ads Reach</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Right Profile Card Visual -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md">
+                        <!-- Ambient backdrop glow -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 to-amber-500 rounded-3xl blur-xl opacity-30 animate-pulse"></div>
+                        
+                        <div class="relative rounded-3xl glass-card p-6 border border-slate-700/80 overflow-hidden">
+                            <!-- Image Container -->
+                            <div class="relative h-[480px] w-full rounded-2xl overflow-hidden bg-slate-900/90 flex items-center justify-center">
+                                <!-- Local photo (will automatically show when hosted with the image file) -->
+                               <img src="https://fernandesputra.my.id/wp-content/uploads/2026/08/Foto-Profile.png"
+     alt="Fernandes Putra Pasaribu - Head of Digital Marketing" 
+     class="w-full h-full object-cover object-top transform hover:scale-105 transition-transform duration-500 z-10">
+                    </div>
+                                 <!-- Bottom Info Overlay (High Contrast) -->
+                    <div class="w-full z-30 pt-3">
+                        <div class="bg-slate-900/90 backdrop-blur-md border border-slate-700/80 rounded-xl p-3.5 shadow-2xl">
+                            <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-bold bg-blue-500/20 text-blue-400 border border-blue-500/40 uppercase tracking-wider mb-1">
+                                <span class="w-1.5 h-1.5 rounded-full bg-blue-400 animate-pulse"></span>
+                                Praktisi Digital Marketing
+                            </span>
+                            <h3 class="text-lg font-extrabold text-white tracking-tight drop-shadow-sm">
+                                Fernandes Putra Pasaribu, S.Kom
+                            </h3>
+                        </div>
+                    </div>
+
+                            <!-- Social Links Bar -->
+                            <div class="flex items-center justify-between pt-5 mt-2 border-t border-slate-800">
+                                <span class="text-xs text-slate-400 font-medium">Terhubung di Media Sosial:</span>
+                                <div class="flex items-center gap-3">
+                                    <a href="https://instagram.com/fernandespsrb" target="_blank" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-pink-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                                        <i class="fa-brands fa-instagram text-base"></i>
+                                    </a>
+                                    <a href="https://www.linkedin.com/in/fernandes-putra-040b55260/" target="_blank" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-blue-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors">
+                                        <i class="fa-brands fa-linkedin-in text-base"></i>
+                                    </a>
+                                    <a href="https://tiktok.com/@fernandespsrb" target="_blank" class="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-200 hover:text-black text-slate-300 flex items-center justify-center transition-colors">
+                                        <i class="fa-brands fa-tiktok text-base"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about" class="py-20 relative bg-slate-900/40 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Tentang Profile</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Dedikasi Membangun Brand & Hasil Penjualan Digital</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <!-- Bio Text -->
+                <div class="space-y-6">
+                    <div class="glass-card p-8 rounded-2xl relative border-l-4 border-l-blue-500">
+                        <h3 class="text-xl font-bold text-white mb-3">Siapa Fernandes Putra?</h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Lahir di <strong class="text-white">Pematang Siantar, 11 September 1999</strong>. Fernandes Putra Pasaribu adalah lulusan <strong class="text-blue-400">STIKOM Tunas Bangsa Pematang Siantar</strong> jurusan <strong class="text-white">Teknik Informatika</strong>. Berbekal latar belakang IT, Fernandes memiliki rasa ingin tahu yang tinggi, selalu belajar, dan konsisten mengikuti percepatan era digitalisasi.
+                        </p>
+                    </div>
+
+                    <div class="glass-card p-8 rounded-2xl relative border-l-4 border-l-amber-500">
+                        <h3 class="text-xl font-bold text-white mb-3">Spesialisasi & Pendekatan Kerja</h3>
+                        <p class="text-slate-300 text-sm sm:text-base leading-relaxed">
+                            Memiliki pengalaman kerja kurang lebih <strong class="text-amber-400">4 tahun</strong> di bidang manajemen penjualan dan pemasaran digital. Berawal dari <strong class="text-white">Content Creator</strong> di salah satu Perusahaan Property terkemuka di kota Medan, kemudian berkembang dan dipercaya memegang posisi strategis sebagai <strong class="text-blue-400">Head of Digital Marketing</strong>.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Personal Highlights Cards Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:bg-slate-800/70 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-1">Latar Belakang IT</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Memahami dasar algoritma, analisis data, dan integrasi teknis platform ads digital.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:bg-slate-800/70 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-rectangle-ad"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-1">Performa Paid Ads</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Berpengalaman mengelola Meta Ads, Google Ads & TikTok Ads dengan penekanan pada efisiensi CPC & Leads.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:bg-slate-800/70 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-camera-retro"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-1">Kreativitas Visual</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Penguasaan kamera mirrorless, peralatan produksi video, serta editing Adobe Premiere Pro.</p>
+                    </div>
+
+                    <div class="p-6 rounded-2xl bg-slate-800/40 border border-slate-700/60 hover:bg-slate-800/70 transition-colors">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 text-emerald-400 flex items-center justify-center text-xl mb-4">
+                            <i class="fa-solid fa-users-gear"></i>
+                        </div>
+                        <h4 class="text-white font-bold text-lg mb-1">Kepemimpinan Tim</h4>
+                        <p class="text-xs text-slate-400 leading-relaxed">Rutin mengadakan sharing session, memberikan training tim sales/kreatif secara organik & berbayar.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Keahlian & Toolkit</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Kompetensi Utama Pemasaran Digital</p>
+                <p class="text-sm text-slate-400 mt-2">Kombinasi kemampuan eksekusi teknis, strategi iklan, serta pembuatan konten visual berkualitas tinggi.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Skill Card 1: Pemasaran Digital -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800 hover:border-blue-500/40 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-blue-600 to-blue-400 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-chart-pie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Pemasaran Digital (Paid Ads)</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Familiar dan terbiasa mengoptimalkan platform iklan digital berbayar untuk mendatangkan konsumen potensial secara terukur.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Meta Ads (Instagram & FB)</span>
+                                <span class="text-blue-400">92%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-blue-500 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Google Ads (Search & Display)</span>
+                                <span class="text-amber-400">88%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-amber-500 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">TikTok Ads & Creator Studio</span>
+                                <span class="text-emerald-400">85%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-emerald-500 rounded-full" style="width: 85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 2: Videography & Creative Production -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800 hover:border-purple-500/40 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-purple-600 to-pink-500 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-purple-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-clapperboard"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Videografi & Produksi Konten</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Penguasaan alat produksi video modern, pengaturan lighting, serta penyuntingan konten kreatif berdaya saing tinggi.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Mirrorless Camera & Gear</span>
+                                <span class="text-purple-400">90%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-purple-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Adobe Premiere Pro & Editing</span>
+                                <span class="text-pink-400">88%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-pink-500 rounded-full" style="width: 88%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Short Video Trends (Reels & TikTok)</span>
+                                <span class="text-blue-400">95%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-blue-400 rounded-full" style="width: 95%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skill Card 3: Sales Strategy & Leadership -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800 hover:border-amber-500/40 transition-all group">
+                    <div class="w-14 h-14 rounded-2xl bg-gradient-to-tr from-amber-600 to-amber-400 flex items-center justify-center text-white text-2xl mb-6 shadow-lg shadow-amber-500/20 group-hover:scale-110 transition-transform">
+                        <i class="fa-solid fa-user-tie"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Manajemen Sales & Leadership</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed mb-6">
+                        Rekam jejak pengalaman sales konvensional hingga kemampuan melatih serta mengontrol tim kreatif perusahaan.
+                    </p>
+
+                    <div class="space-y-4">
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Team Control & Mentoring</span>
+                                <span class="text-amber-400">90%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-amber-500 rounded-full" style="width: 90%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Sales Negotiation & Closing</span>
+                                <span class="text-emerald-400">86%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-emerald-500 rounded-full" style="width: 86%"></div>
+                            </div>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between text-xs font-semibold mb-1">
+                                <span class="text-slate-300">Digital Training / Sharing Session</span>
+                                <span class="text-purple-400">92%</span>
+                            </div>
+                            <div class="w-full h-2 rounded-full bg-slate-800 overflow-hidden">
+                                <div class="h-full bg-purple-400 rounded-full" style="width: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WORK EXPERIENCE TIMELINE SECTION -->
+    <section id="experience" class="py-20 relative bg-slate-900/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Pengalaman Kerja</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Perjalanan Karir & Profesionalisme</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="relative timeline-line">
+                
+                <!-- Experience Item 1 -->
+                <div class="relative z-10 mb-12 md:mb-16">
+                    <div class="md:flex items-center justify-between gap-8">
+                        
+                        <div class="md:w-1/2 md:text-right mb-4 md:mb-0">
+                            <span class="inline-block px-4 py-1.5 rounded-full bg-blue-500/20 text-blue-400 font-bold text-xs border border-blue-500/30 mb-2">
+                                Juli 2024 - Sekarang
+                            </span>
+                            <h3 class="text-2xl font-bold text-white">Head of Digital Marketing</h3>
+                            <p class="text-sm font-semibold text-amber-400">Perusahaan Real Estate / Property Medan</p>
+                        </div>
+
+                        <!-- Dot Icon -->
+                        <div class="w-10 h-10 rounded-full bg-blue-600 border-4 border-slate-900 text-white flex items-center justify-center font-bold mx-auto my-2 md:my-0 shadow-lg shadow-blue-500/50">
+                            <i class="fa-solid fa-briefcase text-xs"></i>
+                        </div>
+
+                        <div class="md:w-1/2">
+                            <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                                <ul class="space-y-2 text-sm text-slate-300">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                        <span>Memberikan <strong>training & pemahaman</strong> mendalam kepada tim Marketing mengenai strategi pemasaran digital mutakhir.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                        <span>Memegang kontrol penuh terhadap <strong>Content Creator & Tim Kreatif</strong> dalam pemasaran digital organik maupun campaign iklan berbayar.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Experience Item 2 -->
+                <div class="relative z-10 mb-12 md:mb-16">
+                    <div class="md:flex items-center justify-between gap-8 md:flex-row-reverse">
+                        
+                        <div class="md:w-1/2 md:text-left mb-4 md:mb-0">
+                            <span class="inline-block px-4 py-1.5 rounded-full bg-purple-500/20 text-purple-400 font-bold text-xs border border-purple-500/30 mb-2">
+                                Juli 2024 - Februari 2025
+                            </span>
+                            <h3 class="text-2xl font-bold text-white">Supervisor Digital Marketing</h3>
+                            <p class="text-sm font-semibold text-amber-400">Multi-Brand Property Management</p>
+                        </div>
+
+                        <!-- Dot Icon -->
+                        <div class="w-10 h-10 rounded-full bg-purple-600 border-4 border-slate-900 text-white flex items-center justify-center font-bold mx-auto my-2 md:my-0 shadow-lg shadow-purple-500/50">
+                            <i class="fa-solid fa-user-gear text-xs"></i>
+                        </div>
+
+                        <div class="md:w-1/2 md:text-right">
+                            <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                                <ul class="space-y-2 text-sm text-slate-300 text-left">
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                        <span>Dipercaya memegang kontrol pemasaran digital untuk <strong>2 Perusahaan sekaligus</strong>.</span>
+                                    </li>
+                                    <li class="flex items-start gap-2">
+                                        <i class="fa-solid fa-check text-emerald-400 mt-1"></i>
+                                        <span>Pada Feb 2025 mengambil keputusan strategis untuk fokus penuh pada percepatan dan pertumbuhan salah satu perusahaan utama.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Experience Item 3 -->
+                <div class="relative z-10 mb-12 md:mb-16">
+                    <div class="md:flex items-center justify-between gap-8">
+                        
+                        <div class="md:w-1/2 md:text-right mb-4 md:mb-0">
+                            <span class="inline-block px-4 py-1.5 rounded-full bg-amber-500/20 text-amber-400 font-bold text-xs border border-amber-500/30 mb-2">
+                                Des 2023 - Juli 2024
+                            </span>
+                            <h3 class="text-2xl font-bold text-white">Content Creator</h3>
+                            <p class="text-sm font-semibold text-amber-400">Perusahaan Property Medan</p>
+                        </div>
+
+                        <!-- Dot Icon -->
+                        <div class="w-10 h-10 rounded-full bg-amber-500 border-4 border-slate-900 text-white flex items-center justify-center font-bold mx-auto my-2 md:my-0 shadow-lg shadow-amber-500/50">
+                            <i class="fa-solid fa-video text-xs"></i>
+                        </div>
+
+                        <div class="md:w-1/2">
+                            <div class="glass-card p-6 rounded-2xl border border-slate-800">
+                                <p class="text-sm text-slate-300 leading-relaxed">
+                                    Mengawali karir di industri properti Medan sebagai pembuat konten video & visual. Berkat performa tinggi dan orientasi hasil, dalam waktu singkat dipromosikan menjadi Supervisor Digital Marketing.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- Conventional & Corporate Sales Track Record -->
+                <div class="relative z-10">
+                    <div class="glass-card p-8 rounded-3xl border border-slate-700/80 max-w-4xl mx-auto bg-gradient-to-b from-slate-800/80 to-slate-900/80">
+                        <div class="flex items-center gap-3 mb-4">
+                            <div class="p-3 rounded-xl bg-amber-500/20 text-amber-400 text-xl">
+                                <i class="fa-solid fa-building"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-bold text-white">Pengalaman Marketing Konvensional & Corporate Advisor</h4>
+                                <p class="text-xs text-slate-400">Posisi: Credit Marketing Officer, Marketing Credit Executive & Sales Specialist</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-slate-300 leading-relaxed mb-6">
+                            Memiliki fondasi lapangan yang sangat kuat melalui perjalanan karir di beberapa Perusahaan Multinasional ternama:
+                        </p>
+                        
+                        <!-- Company Badges -->
+                        <div class="flex flex-wrap gap-2">
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700"><i class="fa-solid fa-shield-halved text-blue-400 mr-1.5"></i> Adira Dinamika Multifinance</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700"><i class="fa-solid fa-building-columns text-blue-400 mr-1.5"></i> BCA Multifinance</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700"><i class="fa-solid fa-hand-holding-dollar text-blue-400 mr-1.5"></i> FIFGroup</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700"><i class="fa-solid fa-signal text-amber-400 mr-1.5"></i> Smartfren Telecom</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700"><i class="fa-solid fa-store text-emerald-400 mr-1.5"></i> Kawan Lama Group</span>
+                            <span class="px-3 py-1.5 rounded-lg bg-slate-800 text-slate-200 text-xs font-semibold border border-slate-700"><i class="fa-solid fa-globe text-purple-400 mr-1.5"></i> Korea Tomorrow & Global (KT&G)</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SOCIAL MEDIA PROJECTS SHOWCASE SECTION -->
+    <section id="projects" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+                <div>
+                    <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Portofolio Brand</h2>
+                    <p class="text-3xl sm:text-4xl font-extrabold text-white">Proyek Pengelolaan Sosial Media</p>
+                    <p class="text-sm text-slate-400 mt-2">Optimalisasi akun developer & perumahan di wilayah Medan & Deli Serdang.</p>
+                </div>
+
+                <!-- Category Filter Buttons -->
+                <div class="flex items-center gap-2 bg-slate-900/80 p-1.5 rounded-xl border border-slate-800">
+                    <button class="px-4 py-2 rounded-lg text-xs font-bold bg-blue-600 text-white transition-all project-filter-btn" data-filter="all">Semua Proyek</button>
+                    <button class="px-4 py-2 rounded-lg text-xs font-bold text-slate-400 hover:text-white transition-all project-filter-btn" data-filter="realestate">Developer Real Estate</button>
+                </div>
+            </div>
+
+            <!-- Brand Cards Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                
+                <!-- Brand 1: Bungsuland Property -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="p-6 bg-gradient-to-br from-slate-800 to-slate-900 border-b border-slate-800 flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 font-bold flex items-center justify-center text-xl border border-amber-500/30">
+                                B
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Bungsuland Property</h3>
+                                <p class="text-xs text-slate-400">@bungsulandproperty</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Aktif</span>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            "Wujudkan Rumah Impian Tanpa Overbudget. #GampangPunyaRumah" — Perumahan di Medan dengan cicilan ringan & akses mudah.
+                        </p>
+
+                        <!-- IG & TikTok Stats -->
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="text-xs text-slate-400 flex items-center gap-1"><i class="fa-brands fa-instagram text-pink-500"></i> Instagram</div>
+                                <div class="text-base font-bold text-white mt-1">6.800+ <span class="text-xs font-normal text-slate-400">Pengikut</span></div>
+                                <div class="text-[10px] text-slate-500">900+ Postingan</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="text-xs text-slate-400 flex items-center gap-1"><i class="fa-brands fa-tiktok text-slate-200"></i> TikTok</div>
+                                <div class="text-base font-bold text-white mt-1">3.200+ <span class="text-xs font-normal text-slate-400">Pengikut</span></div>
+                                <div class="text-[10px] text-slate-500">30K+ Likes</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://instagram.com/bungsulandproperty" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+                                Kunjungi Instagram <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand 2: Arsaland Property Group -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="p-6 bg-gradient-to-br from-slate-800 to-slate-900 border-b border-slate-800 flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-blue-500/20 text-blue-400 font-bold flex items-center justify-center text-xl border border-blue-500/30">
+                                A
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">Arsaland Property Group</h3>
+                                <p class="text-xs text-slate-400">@arsaland.id</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Aktif</span>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Developer Rumah Subsidi Medan — "Mau beli rumah? Belinya di Arsaland Aja". Part of @arsaland.premier.
+                        </p>
+
+                        <!-- IG Stats -->
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800 col-span-2">
+                                <div class="text-xs text-slate-400 flex items-center gap-1"><i class="fa-brands fa-instagram text-pink-500"></i> Instagram Official</div>
+                                <div class="text-base font-bold text-white mt-1">5.900+ <span class="text-xs font-normal text-slate-400">Pengikut</span></div>
+                                <div class="text-[10px] text-slate-500">500+ Postingan Edukatif & Promo</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://instagram.com/arsaland.id" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+                                Kunjungi Instagram <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Brand 3: SMK Property -->
+                <div class="glass-card rounded-3xl overflow-hidden border border-slate-800 hover:border-blue-500/50 transition-all group">
+                    <div class="p-6 bg-gradient-to-br from-slate-800 to-slate-900 border-b border-slate-800 flex justify-between items-start">
+                        <div class="flex items-center gap-3">
+                            <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 font-bold flex items-center justify-center text-xl border border-purple-500/30">
+                                S
+                            </div>
+                            <div>
+                                <h3 class="text-lg font-bold text-white group-hover:text-blue-400 transition-colors">SMK Property Residence</h3>
+                                <p class="text-xs text-slate-400">@smkproperty.home</p>
+                            </div>
+                        </div>
+                        <span class="px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-semibold">Aktif</span>
+                    </div>
+
+                    <div class="p-6 space-y-4">
+                        <p class="text-xs text-slate-300 leading-relaxed">
+                            Akun Resmi Perumahan Medan & Deli Serdang — Informasi unit promo, progres pembangunan, hingga akad konsumen.
+                        </p>
+
+                        <!-- IG & TikTok Stats -->
+                        <div class="grid grid-cols-2 gap-3 pt-2">
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="text-xs text-slate-400 flex items-center gap-1"><i class="fa-brands fa-instagram text-pink-500"></i> Instagram</div>
+                                <div class="text-base font-bold text-white mt-1">1.800+ <span class="text-xs font-normal text-slate-400">Pengikut</span></div>
+                                <div class="text-[10px] text-slate-500">500+ Postingan</div>
+                            </div>
+                            <div class="p-3 rounded-xl bg-slate-900/60 border border-slate-800">
+                                <div class="text-xs text-slate-400 flex items-center gap-1"><i class="fa-brands fa-tiktok text-slate-200"></i> TikTok</div>
+                                <div class="text-base font-bold text-white mt-1">1.600+ <span class="text-xs font-normal text-slate-400">Pengikut</span></div>
+                                <div class="text-[10px] text-slate-500">20K+ Likes</div>
+                            </div>
+                        </div>
+
+                        <div class="pt-2">
+                            <a href="https://instagram.com/smkproperty.home" target="_blank" class="w-full py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-slate-200 hover:text-white text-xs font-bold flex items-center justify-center gap-2 transition-colors">
+                                Kunjungi Instagram <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ADS PERFORMANCE & ANALYTICS DASHBOARD SECTION -->
+    <section id="analytics" class="py-20 relative bg-slate-900/50 border-y border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Metrik & Hasil Kampanye</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Analisis Performa Meta, Google & TikTok Ads</p>
+                <p class="text-sm text-slate-400 mt-2">Bukti eksekusi iklan digital berdasar data kuantitatif, optimasi CPC, dan retensi jangkauan audiens.</p>
+            </div>
+
+            <!-- Analytics Dashboard Box -->
+            <div class="glass-card rounded-3xl p-6 lg:p-8 border border-slate-800">
+                
+                <!-- Dashboard Header Bar -->
+                <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between pb-6 mb-6 border-b border-slate-800 gap-4">
+                    <div>
+                        <div class="flex items-center gap-2 text-xs font-bold text-emerald-400 mb-1">
+                            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                            Kampanye Iklan Real-time Optimization
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Ikhtisar Performa Iklan Properti (Medan)</h3>
+                    </div>
+
+                    <div class="flex flex-wrap items-center gap-3">
+                        <span class="px-3 py-1.5 rounded-lg bg-blue-500/10 text-blue-400 text-xs font-bold border border-blue-500/20">Google Ads CPC: ~Rp 2.176</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-emerald-500/10 text-emerald-400 text-xs font-bold border border-emerald-500/20">Click-Through Rate: 59.55%</span>
+                    </div>
+                </div>
+
+                <!-- KPI Metric Cards Grid -->
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                    
+                    <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <span class="text-xs text-slate-400 font-medium">Klik Iklan Google</span>
+                        <div class="text-2xl font-extrabold text-blue-400 mt-1">600+ <span class="text-xs font-normal text-slate-500">Klik</span></div>
+                        <p class="text-[11px] text-emerald-400 mt-1"><i class="fa-solid fa-arrow-trend-up"></i> Efisiensi Biaya tinggi</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <span class="text-xs text-slate-400 font-medium">Total Tayangan Iklan</span>
+                        <div class="text-2xl font-extrabold text-white mt-1">14.578+</div>
+                        <p class="text-[11px] text-blue-400 mt-1"><i class="fa-solid fa-eye"></i> Impresi Tayang Iklan</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <span class="text-xs text-slate-400 font-medium">Penonton Video Organik</span>
+                        <div class="text-2xl font-extrabold text-amber-400 mt-1">21.320+</div>
+                        <p class="text-[11px] text-slate-400 mt-1">Rata-rata 00:07 detik</p>
+                    </div>
+
+                    <div class="p-4 rounded-2xl bg-slate-900/80 border border-slate-800">
+                        <span class="text-xs text-slate-400 font-medium">Rata-rata CPC (Per Klik)</span>
+                        <div class="text-2xl font-extrabold text-emerald-400 mt-1">Rp 2.176</div>
+                        <p class="text-[11px] text-emerald-400 mt-1">Sangat Terjangkau</p>
+                    </div>
+
+                </div>
+
+                <!-- Chart Visualization Canvas -->
+                <div class="bg-slate-950/60 p-6 rounded-2xl border border-slate-800">
+                    <div class="flex items-center justify-between mb-4">
+                        <span class="text-sm font-bold text-slate-300"><i class="fa-solid fa-chart-area text-blue-400 mr-2"></i> Grafik Tren Interaksi & Tayangan Iklan Properti</span>
+                        <span class="text-xs text-slate-500">Agustus - September</span>
+                    </div>
+                    <div class="relative h-72 w-full">
+                        <canvas id="adsChart"></canvas>
+                    </div>
+                </div>
+
+                <!-- Strategy Breakdown Notes -->
+                <div class="mt-8 grid md:grid-cols-2 gap-6 pt-6 border-t border-slate-800">
+                    <div class="flex gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-blue-500/20 text-blue-400 flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-filter"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">Targeting Audiens Lokal Medan & Sekitarnya</h4>
+                            <p class="text-xs text-slate-400 mt-1">
+                                Kampanye difokuskan pada demografi usia produktif pencari rumah pertama di Medan, Deli Serdang, dan sekitarnya dengan *copywriting* persuasif #GampangPunyaRumah.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex gap-3">
+                        <div class="w-8 h-8 rounded-lg bg-amber-500/20 text-amber-400 flex items-center justify-center shrink-0 mt-1">
+                            <i class="fa-solid fa-gauge-high"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-white">A/B Testing Konten Kreatif</h4>
+                            <p class="text-xs text-slate-400 mt-1">
+                                Melakukan evaluasi rutin antar video tur perumahan, testimoni akad, serta promo cashback untuk menekan Cost Per Click (CPC) hingga tingkat optimal.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- EDUCATION & COMMUNITY SECTION -->
+    <section id="education" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Riwayat Pendidikan & Komunitas</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Fondasi Akademis & Organisasi</p>
+                <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-amber-500 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid lg:grid-cols-3 gap-8">
+                
+                <!-- STIKOM Tunas Bangsa -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800 relative hover:border-blue-500/40 transition-all">
+                    <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 font-bold text-xs border border-blue-500/20 mb-4 inline-block">2018 - 2022</span>
+                    <h3 class="text-xl font-bold text-white mb-1">STIKOM Tunas Bangsa</h3>
+                    <p class="text-xs font-semibold text-amber-400 mb-4">S1 Teknik Informatika — Pematang Siantar</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Diimbangi dengan kuliah dan bekerja di perusahaan multinasional. Aktif andil di beberapa event di Pematang Siantar, serta dipercaya mengontrol tim kreatif komunitas besar Djarum Super (<strong class="text-white">Superfriends Pematang Siantar</strong>).
+                    </p>
+                </div>
+
+                <!-- SMKN 2 Pematang Siantar -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800 relative hover:border-purple-500/40 transition-all">
+                    <span class="px-3 py-1 rounded-full bg-purple-500/10 text-purple-400 font-bold text-xs border border-purple-500/20 mb-4 inline-block">2014 - 2017</span>
+                    <h3 class="text-xl font-bold text-white mb-1">SMK Negeri 2 Pematang Siantar</h3>
+                    <p class="text-xs font-semibold text-purple-400 mb-4">Pendidikan Menengah Kejuruan</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Mulai mengasah ketertarikan mendalam pada industri kreatif visual, mendalami dasar-dasar teknik videografi dan fotografi secara mandiri maupun praktik sekolah.
+                    </p>
+                </div>
+
+                <!-- SMPN 8 Pematang Siantar -->
+                <div class="glass-card p-8 rounded-3xl border border-slate-800 relative hover:border-amber-500/40 transition-all">
+                    <span class="px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 font-bold text-xs border border-amber-500/20 mb-4 inline-block">2012 - 2014</span>
+                    <h3 class="text-xl font-bold text-white mb-1">SMP Negeri 8 Pematang Siantar</h3>
+                    <p class="text-xs font-semibold text-amber-400 mb-4">Pendidikan Menengah Pertama</p>
+                    <p class="text-xs text-slate-300 leading-relaxed">
+                        Mengawali pendidikan menengah pertama di Pematang Siantar dan mulai aktif membangun jejaring sosial di beberapa komunitas pemuda daerah.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SHARING SESSION & TRAINING SECTION -->
+    <section class="py-20 relative bg-slate-900/40 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 text-amber-400 text-xs font-bold border border-amber-500/20">
+                        <i class="fa-solid fa-chalkboard-user"></i> Sharing & Mentoring
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
+                        Edukasi & Transfer Ilmu Digital Marketing
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        Fernandes terbiasa berbagi ilmu dan mengambil peran aktif dalam sesi *sharing* maupun pelatihan bersama tim sales internal, tim pemasar, serta tim konten kreatif.
+                    </p>
+
+                    <div class="space-y-3 pt-2">
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <i class="fa-solid fa-graduation-cap text-blue-400 text-lg"></i>
+                            <span class="text-xs font-semibold text-slate-200">Materi dasar hingga tingkat lanjut Meta & TikTok Ads</span>
+                        </div>
+                        <div class="flex items-center gap-3 p-3 rounded-xl bg-slate-800/50 border border-slate-700/50">
+                            <i class="fa-solid fa-users text-amber-400 text-lg"></i>
+                            <span class="text-xs font-semibold text-slate-200">Peningkatan wawasan sales mengenai penanganan *leads* digital</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Event Photo Card Mockup -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-6 rounded-3xl border border-slate-700 relative overflow-hidden">
+                        <div class="relative h-80 rounded-2xl overflow-hidden bg-slate-800">
+                            <img src="https://fernandesputra.my.id/wp-content/uploads/2026/08/SharingSessionFERNANDESPUTRA-scaled.jpeg"
+                                 alt="Sharing Session Digital Marketing Fernandes Putra" 
+                                 class="w-full h-full object-cover">
+                                
+                            <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent"></div>
+
+                            <div class="absolute bottom-6 left-6 right-6">
+                                <span class="px-3 py-1 rounded-md bg-amber-500 text-black font-bold text-xs uppercase tracking-wider mb-2 inline-block">
+                                    Dokumentasi Sesi Sharing
+                                </span>
+                                <h3 class="text-lg font-bold text-white">Sharing Session Digital Marketing</h3>
+                                <p class="text-xs text-slate-300 mt-1"><i class="fa-solid fa-calendar-day mr-1 text-blue-400"></i> Diselenggarakan berkala bersama tim Pemasaran & Kreatif Property Medan</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-20 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-blue-400 tracking-widest uppercase mb-2">Mari Bekerjasama</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-white">Siap Membantu Pertumbuhan Brand Anda</p>
+                <p class="text-sm text-slate-400 mt-2">Hubungi saya untuk diskusi strategi digital marketing, audit paid ads, atau kolaborasi proyek.</p>
+            </div>
+
+            <div class="grid lg:grid-cols-12 gap-12 items-start">
+                
+                <!-- Contact Direct Cards -->
+                <div class="lg:col-span-5 space-y-6">
+                    
+                    <a href="https://instagram.com/fernandespsrb" target="_blank" class="glass-card p-6 rounded-2xl flex items-center gap-4 hover:border-pink-500/50 transition-all group block">
+                        <div class="w-12 h-12 rounded-xl bg-pink-500/10 text-pink-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">Instagram Official</span>
+                            <span class="text-base font-bold text-white group-hover:text-pink-400 transition-colors">@fernandespsrb</span>
+                        </div>
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/fernandes-putra-040b55260/" target="_blank" class="glass-card p-6 rounded-2xl flex items-center gap-4 hover:border-blue-500/50 transition-all group block">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 text-blue-400 flex items-center justify-center text-2xl group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">LinkedIn Profile</span>
+                            <span class="text-base font-bold text-white group-hover:text-blue-400 transition-colors">Fernandes Putra Pasaribu</span>
+                        </div>
+                    </a>
+
+                    <div class="glass-card p-6 rounded-2xl flex items-center gap-4 border border-slate-800">
+                        <div class="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-400 flex items-center justify-center text-2xl">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </div>
+                        <div>
+                            <span class="text-xs text-slate-400 block">Lokasi Dominan</span>
+                            <span class="text-base font-bold text-white">Medan & Pematang Siantar, Sumatera Utara</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Interactive Direct Message Form -->
+                <div class="lg:col-span-7">
+                    <div class="glass-card p-8 rounded-3xl border border-slate-800 relative">
+                        <h3 class="text-xl font-bold text-white mb-6 flex items-center gap-2">
+                            <i class="fa-solid fa-envelope text-blue-400"></i> Kirim Pesan Langsung
+                        </h3>
+
+                        <form id="contactForm" class="space-y-5">
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Nama Lengkap</label>
+                                    <input type="text" required placeholder="Masukkan nama Anda" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors">
+                                </div>
+                                <div>
+                                    <label class="block text-xs font-semibold text-slate-300 mb-2">Email / No. WhatsApp</label>
+                                    <input type="text" required placeholder="Contoh: 0812xxxx atau email" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors">
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Subjek / Topik Diskusikan</label>
+                                <input type="text" required placeholder="Contoh: Konsultasi Meta Ads Properti" class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors">
+                            </div>
+
+                            <div>
+                                <label class="block text-xs font-semibold text-slate-300 mb-2">Pesan Anda</label>
+                                <textarea rows="4" required placeholder="Tuliskan pesan atau kebutuhan pemasaran digital Anda..." class="w-full px-4 py-3 rounded-xl bg-slate-900/80 border border-slate-700/80 text-white placeholder-slate-500 focus:outline-none focus:border-blue-500 text-sm transition-colors resize-none"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-blue-600 to-amber-500 hover:from-blue-500 hover:to-amber-400 text-white font-bold text-sm shadow-lg shadow-blue-500/20 transition-all flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Kirim Pesan Sekarang
+                            </button>
+                        </form>
+
+                        <!-- Feedback Toast Notification Container -->
+                        <div id="toast" class="hidden mt-4 p-4 rounded-xl bg-emerald-500/20 border border-emerald-500/40 text-emerald-300 text-xs font-semibold text-center">
+                            <i class="fa-solid fa-circle-check mr-2"></i> Pesan berhasil terkirim! Fernandes akan merespons pesan Anda sesegera mungkin.
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-8 bg-slate-950 border-t border-slate-800/80 text-xs text-slate-500">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 <span class="text-slate-300 font-semibold">Fernandes Putra Pasaribu</span>. All Rights Reserved.
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#hero" class="hover:text-blue-400 transition-colors">Kembali ke Atas <i class="fa-solid fa-arrow-up ml-1"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            
+            // 1. Mobile Menu Toggle
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+
+            if (mobileMenuBtn && mobileMenu) {
+                mobileMenuBtn.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('hidden');
+                });
+
+                // Close menu when clicking a link
+                mobileMenu.querySelectorAll('a').forEach(link => {
+                    link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+                });
+            }
+
+           // 2. Form Submission Handling -> Kirim Langsung ke WhatsApp
+   const contactForm = document.getElementById('contactForm');
+
+   if (contactForm) {
+       contactForm.addEventListener('submit', function(e) {
+           e.preventDefault();
+           
+           // Mengambil data dari input form
+           const inputs = contactForm.querySelectorAll('input, textarea');
+           const nama = inputs[0].value;
+           const kontak = inputs[1].value;
+           const subjek = inputs[2].value;
+           const pesan = inputs[3].value;
+           
+           // Nomor WhatsApp Anda (Pastikan menggunakan awalan 62)
+           const nomorWA = "6282384557833";
+           
+           // Format pesan WhatsApp yang akan terkirim
+           const pesanWA = `Halo Fernandes, ada pesan baru dari Website Portofolio:\n\n` +
+                           `*Nama:* ${nama}\n` +
+                           `*Kontak:* ${kontak}\n` +
+                           `*Subjek:* ${subjek}\n` +
+                           `*Pesan:* ${pesan}`;
+           
+           // Membuka aplikasi WhatsApp / WA Web secara otomatis
+           window.open(`https://wa.me/${nomorWA}?text=${encodeURIComponent(pesanWA)}`, '_blank');
+           
+           contactForm.reset();
+       });
+   }
+
+            // 3. Render Chart.js Ads Analytics
+            const ctx = document.getElementById('adsChart');
+            if (ctx) {
+                new Chart(ctx, {
+                    type: 'line',
+                    data: {
+                        labels: ['Minggu 1', 'Minggu 2', 'Minggu 3', 'Minggu 4', 'Minggu 5'],
+                        datasets: [
+                            {
+                                label: 'Impression Tayangan Iklan',
+                                data: [2100, 4800, 8900, 11800, 14578],
+                                borderColor: '#3b82f6',
+                                backgroundColor: 'rgba(59, 130, 246, 0.1)',
+                                fill: true,
+                                tension: 0.4,
+                                borderWidth: 3,
+                                pointBackgroundColor: '#3b82f6'
+                            },
+                            {
+                                label: 'Tontonan Video Organik',
+                                data: [3200, 7500, 12000, 17400, 21320],
+                                borderColor: '#f59e0b',
+                                backgroundColor: 'transparent',
+                                borderDash: [5, 5],
+                                tension: 0.4,
+                                borderWidth: 2,
+                                pointBackgroundColor: '#f59e0b'
+                            }
+                        ]
+                    },
+                    options: {
+                        responsive: true,
+                        maintainAspectRatio: false,
+                        plugins: {
+                            legend: {
+                                labels: {
+                                    color: '#94a3b8',
+                                    font: {
+                                        family: 'Plus Jakarta Sans',
+                                        size: 11
+                                    }
+                                }
+                            }
+                        },
+                        scales: {
+                            x: {
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.05)'
+                                },
+                                ticks: {
+                                    color: '#64748b'
+                                }
+                            },
+                            y: {
+                                grid: {
+                                    color: 'rgba(255, 255, 255, 0.05)'
+                                },
+                                ticks: {
+                                    color: '#64748b'
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+            // 4. Smooth Navbar Background Effect on Scroll
+            const navbar = document.getElementById('navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.classList.add('shadow-xl', 'bg-slate-950/95');
+                } else {
+                    navbar.classList.remove('shadow-xl', 'bg-slate-950/95');
+                }
+            });
+
+        });
+    </script>
+  <!-- Floating WhatsApp Button -->
+<a href="https://wa.me/6282384557833?text=Halo%20Fernandes,%20saya%20ingin%20konsultasi%20digital%20marketing" target="_blank" class="fixed bottom-6 right-6 z-50 flex items-center gap-2 bg-emerald-500 hover:bg-emerald-600 text-white px-4 py-3 rounded-full shadow-2xl transition-all duration-300 hover:scale-105" aria-label="Chat WhatsApp">
+    <i class="fa-brands fa-whatsapp text-2xl"></i>
+    <span class="font-semibold text-sm pr-1 hidden sm:inline">Whatsapp</span>
+</a>
+</body>
+</html>
