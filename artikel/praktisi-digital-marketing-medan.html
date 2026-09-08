@@ -29,7 +29,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/jpeg" href="/favicon.jpg">
 
-  <!-- Font & Framework -->
+  <!-- Tailwind & Font Awesome -->
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,9 +43,14 @@
       color: #94a3b8;
     }
     .glass-card {
-      background: rgba(15, 23, 42, 0.65);
+      background: rgba(15, 23, 42, 0.7);
       backdrop-filter: blur(12px);
       border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .glass-sidebar {
+      background: rgba(15, 23, 42, 0.5);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.05);
     }
   </style>
 
@@ -79,9 +84,9 @@
 </head>
 <body class="antialiased selection:bg-blue-500 selection:text-white min-h-screen flex flex-col justify-between">
 
-  <!-- HEADER NAVIGASI -->
+  <!-- TOP NAVIGATION BAR -->
   <header class="border-b border-slate-800/80 bg-[#060913]/90 sticky top-0 z-50 backdrop-blur-md">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
       <div class="flex items-center gap-3">
         <a href="/" class="w-10 h-10 rounded-xl bg-gradient-to-tr from-blue-600 to-indigo-500 flex items-center justify-center text-white font-bold text-lg shadow-lg shadow-blue-500/20">
           F
@@ -92,126 +97,188 @@
         </div>
       </div>
       <div class="flex items-center gap-3">
-        <a href="/artikel/" class="text-xs font-semibold text-slate-300 hover:text-white transition-colors flex items-center gap-1.5">
+        <a href="/artikel/" class="px-3.5 py-1.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-xs font-semibold text-slate-300 hover:text-white transition-all flex items-center gap-1.5 border border-slate-700/60">
           <i class="fa-solid fa-arrow-left text-[11px]"></i> Kembali ke Artikel
         </a>
       </div>
     </div>
   </header>
 
-  <!-- KONTEN ARTIKEL -->
-  <main class="max-w-3xl mx-auto px-4 sm:px-6 py-10 flex-1 w-full">
-    <article class="glass-card rounded-2xl p-6 sm:p-10 shadow-2xl border border-slate-800">
-      
-      <!-- Meta & Judul -->
-      <div class="flex items-center gap-3 text-xs text-slate-400 mb-5 flex-wrap">
-        <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 font-semibold border border-blue-500/20">
-          Digital Marketing
-        </span>
-        <span><i class="fa-regular fa-clock mr-1"></i> 5 Menit Baca</span>
-        <span>•</span>
-        <time datetime="2026-09-08">8 September 2026</time>
-      </div>
+  <!-- MAIN CONTAINER WITH SIDEBAR LAYOUT -->
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10 w-full flex-1">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
 
-      <h1 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-        Menata Ulang Ekosistem Pemasaran: Catatan Praktisi Digital Marketing Medan
-      </h1>
-
-      <!-- Gambar Artikel (Path Root Langsung) -->
-      <figure class="my-8">
-        <img src="/modern-marketing-framework-2026.jpg" 
-             alt="Modern Marketing Framework 2026 - Fernandes Putra Praktisi Digital Marketing Medan" 
-             class="w-full h-auto rounded-xl border border-slate-700/60 shadow-xl object-cover">
-        <figcaption class="text-xs text-center text-slate-500 mt-3 italic">
-          Peta ekosistem pemasaran modern: Menghubungkan AI Search (AEO/GEO), SEO Otoritas, Brand, Konten Praktisi, dan Ads.
-        </figcaption>
-      </figure>
-
-      <!-- Isi Artikel -->
-      <div class="space-y-6 text-slate-300 leading-relaxed text-base sm:text-lg">
-        <p>
-          Kalau Anda merasa strategi marketing yang dijalankan setahun atau dua tahun lalu performanya makin berat, Anda tidak sendirian.
-        </p>
-
-        <p>
-          Budget iklan digital makin boros tapi konversi tipis, posting konten media sosial tiap hari seperti buang tenaga ke jurang sepi, dan trafik organik dari Google terasa stagnan. Masalahnya bukan karena tim Anda tiba-tiba kehilangan skill atau strategi lamanya jelek. Masalahnya sederhana: <strong class="text-white">perilaku audiens dan teknologinya sudah bergeser cukup jauh.</strong>
-        </p>
-
-        <p>
-          Sebagai seorang <strong class="text-blue-400">praktisi digital marketing Medan</strong> yang sehari-hari berkutat dengan pergerakan angka, leads, dan dinamika industri di lapangan, saya melihat langsung tiga pergeseran nyata ini:
-        </p>
-
-        <ul class="space-y-3 bg-slate-900/50 p-5 rounded-xl border border-slate-800 text-slate-300 list-disc list-inside">
-          <li><strong class="text-white">Pencarian bukan lagi monopoli Google:</strong> Calon pembeli sekarang aktif bertanya ke mesin AI generatif seperti ChatGPT, Perplexity, dan Gemini untuk mencari rujukan brand.</li>
-          <li><strong class="text-white">Iklan berbayar (paid ads) terasa mahal kalau trust belum terbentuk:</strong> Menggelontorkan budget iklan sebelum diferensiasi brand matang ibarat menuang air ke ember bocor.</li>
-          <li><strong class="text-white">Konten organik butuh Point of View (POV):</strong> Konsistensi jadwal posting tanpa sudut pandang unik hanya akan berakhir jadi tumpukan konten yang dilewati begitu saja.</li>
-        </ul>
-
-        <p>
-          Menjawab situasi ini, solusinya bukan mencoba jago di semua kanal sekaligus secara terpisah, melainkan merapikan ekosistemnya agar saling menopang.
-        </p>
-
-        <h2 class="text-xl font-bold text-white mt-8 pt-4 border-t border-slate-800 flex items-center gap-2">
-          <span class="text-blue-500">1.</span> AI Search Visibility (AEO & GEO)
-        </h2>
-        <p>
-          Mesin pencari modern tidak hanya menyajikan tautan biru (*blue links*), melainkan merangkum jawaban melalui <em class="text-slate-200">Answer Engine Optimization</em> (AEO) dan <em class="text-slate-200">Generative Engine Optimization</em> (GEO). Tugas utama kita adalah memastikan entitas bisnis dan otoritas brand terbaca jelas oleh model AI saat calon konsumen meminta rekomendasi.
-        </p>
-
-        <h2 class="text-xl font-bold text-white mt-8 pt-4 border-t border-slate-800 flex items-center gap-2">
-          <span class="text-blue-500">2.</span> SEO & Organic: Bangun Otoritas Topik
-        </h2>
-        <p>
-          Era menjejalkan kata kunci (*keyword stuffing*) sudah usai. Mesin pencari sekarang mengurai maksud pengguna lewat <em class="text-slate-200">query fanout</em> dan kedalaman topik. Fokus organik saat ini adalah menjawab tuntas kebutuhan spesifik audiens agar website menjadi rujukan primer yang terpercaya.
-        </p>
-
-        <h2 class="text-xl font-bold text-white mt-8 pt-4 border-t border-slate-800 flex items-center gap-2">
-          <span class="text-blue-500">3.</span> Brand & Positioning yang Nyata
-        </h2>
-        <p>
-          Sering kali kendala penjualan bukan ada pada channel promosi, melainkan pada kejelasan posisi produk. Sebelum menaruh budget ke kanal berbayar, tentukan alasan kuat kenapa orang harus memilih Anda dibanding kompetitor. Diferensiasi yang tegas secara otomatis akan menekan biaya akuisisi pelanggan (CAC).
-        </p>
-
-        <h2 class="text-xl font-bold text-white mt-8 pt-4 border-t border-slate-800 flex items-center gap-2">
-          <span class="text-blue-500">4.</span> Content Strategy Berbasis Pengalaman Asli
-        </h2>
-        <p>
-          Audiens makin jenuh dengan konten brosur generik. Format yang terbukti bertahan adalah konten berbasis praktisi (<em class="text-slate-200">practitioner/founder-led content</em>): ceritakan proses lapangan nyata, studi kasus riil, hingga keputusan strategis bisnis untuk membangun kedekatan emosional.
-        </p>
-
-        <h2 class="text-xl font-bold text-white mt-8 pt-4 border-t border-slate-800 flex items-center gap-2">
-          <span class="text-blue-500">5.</span> Paid & Performance: Akselerator, Bukan Mesin Utama
-        </h2>
-        <p>
-          Iklan berbayar (Meta Ads, Google Ads, TikTok Ads) bekerja optimal sebagai <strong class="text-white">akselerator</strong>. Gunakan ads untuk melipatgandakan jangkauan dari funnel dan penawaran yang <strong class="text-white">sudah tervalidasi secara organik</strong>, bukan untuk menambal funnel yang belum terbukti.
-        </p>
-
-        <h2 class="text-xl font-bold text-white mt-8 pt-4 border-t border-slate-800">
-          Menghubungkan Kelimanya Jadi Satu Alur
-        </h2>
-        <p>
-          Strategi pemasaran yang kokoh terbentuk saat konten praktisi memperkuat reputasi brand, diindeks sebagai rujukan oleh mesin AI dan search engine, lalu diskalakan melalui iklan berbayar secara presisi.
-        </p>
-      </div>
-
-      <!-- Penulis & Call-to-Action -->
-      <div class="mt-12 pt-8 border-t border-slate-800 flex flex-col sm:flex-row items-center justify-between gap-4">
-        <div class="flex items-center gap-3">
-          <div class="w-12 h-12 rounded-full overflow-hidden border border-slate-700">
-            <img src="/profil.png" alt="Fernandes Putra" class="w-full h-full object-cover">
+      <!-- LEFT COLUMN: ARTICLE CONTENT -->
+      <main class="lg:col-span-8">
+        <article class="glass-card rounded-2xl p-6 sm:p-10 shadow-2xl border border-slate-800">
+          
+          <!-- Category & Reading Time -->
+          <div class="flex items-center gap-3 text-xs text-slate-400 mb-4 flex-wrap">
+            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 font-semibold border border-blue-500/20">
+              Digital Marketing
+            </span>
+            <span><i class="fa-regular fa-clock mr-1"></i> 5 Menit Baca</span>
+            <span>•</span>
+            <time datetime="2026-09-08">8 September 2026</time>
           </div>
-          <div>
-            <h4 class="text-sm font-bold text-white">Fernandes Putra Pasaribu, S.Kom.</h4>
-            <p class="text-xs text-slate-400">Head of Digital Marketing & Content Strategy</p>
+
+          <!-- Headline -->
+          <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+            Menata Ulang Ekosistem Pemasaran: Catatan Praktisi Digital Marketing Medan
+          </h1>
+
+          <!-- Featured Image -->
+          <figure class="my-6">
+            <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900/60">
+              <img src="/modern-marketing-framework-2026.jpg" 
+                   alt="Modern Marketing Framework 2026 - Fernandes Putra Praktisi Digital Marketing Medan" 
+                   class="w-full h-auto object-cover">
+            </div>
+            <figcaption class="text-xs text-center text-slate-500 mt-2.5 italic">
+              Peta ekosistem pemasaran modern: Menghubungkan AI Search, SEO Otoritas, Brand Positioning, Konten Praktisi, dan Ads.
+            </figcaption>
+          </figure>
+
+          <!-- Article Body -->
+          <div class="space-y-6 text-slate-300 leading-relaxed text-base sm:text-lg">
+            <p>
+              Kalau Anda merasa strategi marketing yang dijalankan setahun atau dua tahun lalu performanya makin berat, Anda tidak sendirian.
+            </p>
+
+            <p>
+              Budget iklan digital makin boros tapi konversi tipis, posting konten media sosial tiap hari seperti buang tenaga ke jurang sepi, dan trafik organik dari Google terasa stagnan. Masalahnya bukan karena tim Anda tiba-tiba kehilangan skill atau strategi lamanya jelek. Masalahnya sederhana: <strong class="text-white">perilaku audiens dan teknologinya sudah bergeser cukup jauh.</strong>
+            </p>
+
+            <p>
+              Sebagai seorang <strong class="text-blue-400">praktisi digital marketing Medan</strong> yang sehari-hari berkutat dengan pergerakan angka, leads, dan dinamika industri di lapangan, saya melihat langsung tiga pergeseran nyata ini:
+            </p>
+
+            <ul class="space-y-3 bg-slate-900/50 p-5 rounded-xl border border-slate-800/80 text-slate-300 list-disc list-inside text-base">
+              <li><strong class="text-white">Pencarian bukan lagi monopoli Google:</strong> Calon pembeli sekarang aktif bertanya ke mesin AI generatif seperti ChatGPT, Perplexity, dan Gemini untuk mencari rujukan brand.</li>
+              <li><strong class="text-white">Iklan berbayar (paid ads) terasa mahal kalau trust belum terbentuk:</strong> Menggelontorkan budget iklan sebelum diferensiasi brand matang ibarat menuang air ke ember bocor.</li>
+              <li><strong class="text-white">Konten organik butuh Point of View (POV):</strong> Konsistensi jadwal posting tanpa sudut pandang unik hanya akan berakhir jadi tumpukan konten yang dilewati begitu saja.</li>
+            </ul>
+
+            <p>
+              Menjawab situasi ini, solusinya bukan mencoba jago di semua kanal sekaligus secara terpisah, melainkan merapikan ekosistemnya agar saling menopang.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-10 pt-6 border-t border-slate-800 flex items-center gap-2">
+              <span class="text-blue-500">1.</span> AI Search Visibility (AEO & GEO)
+            </h2>
+            <p>
+              Mesin pencari modern tidak hanya menyajikan tautan biru (<em>blue links</em>), melainkan merangkum jawaban melalui <em class="text-slate-200">Answer Engine Optimization</em> (AEO) dan <em class="text-slate-200">Generative Engine Optimization</em> (GEO). Tugas utama kita adalah memastikan entitas bisnis dan otoritas brand terbaca jelas oleh model AI saat calon konsumen meminta rekomendasi.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-10 pt-6 border-t border-slate-800 flex items-center gap-2">
+              <span class="text-blue-500">2.</span> SEO & Organic: Bangun Otoritas Topik
+            </h2>
+            <p>
+              Era menjejalkan kata kunci (<em>keyword stuffing</em>) sudah usai. Mesin pencari sekarang mengurai maksud pengguna lewat <em class="text-slate-200">query fanout</em> dan kedalaman topik. Fokus organik saat ini adalah menjawab tuntas kebutuhan spesifik audiens agar website menjadi rujukan primer yang terpercaya.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-10 pt-6 border-t border-slate-800 flex items-center gap-2">
+              <span class="text-blue-500">3.</span> Brand & Positioning yang Nyata
+            </h2>
+            <p>
+              Sering kali kendala penjualan bukan ada pada channel promosi, melainkan pada kejelasan posisi produk. Sebelum menaruh budget ke kanal berbayar, tentukan alasan kuat kenapa orang harus memilih Anda dibanding kompetitor. Diferensiasi yang tegas secara otomatis akan menekan biaya akuisisi pelanggan (CAC).
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-10 pt-6 border-t border-slate-800 flex items-center gap-2">
+              <span class="text-blue-500">4.</span> Content Strategy Berbasis Pengalaman Asli
+            </h2>
+            <p>
+              Audiens makin jenuh dengan konten brosur generik. Format yang terbukti bertahan adalah konten berbasis praktisi (<em class="text-slate-200">practitioner/founder-led content</em>): ceritakan proses lapangan nyata, studi kasus riil, hingga keputusan strategis bisnis untuk membangun kedekatan emosional.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-10 pt-6 border-t border-slate-800 flex items-center gap-2">
+              <span class="text-blue-500">5.</span> Paid & Performance: Akselerator, Bukan Mesin Utama
+            </h2>
+            <p>
+              Iklan berbayar (Meta Ads, Google Ads, TikTok Ads) bekerja optimal sebagai <strong class="text-white">akselerator</strong>. Gunakan ads untuk melipatgandakan jangkauan dari funnel dan penawaran yang <strong class="text-white">sudah tervalidasi secara organik</strong>, bukan untuk menambal funnel yang belum terbukti.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white mt-10 pt-6 border-t border-slate-800">
+              Menghubungkan Kelimanya Jadi Satu Alur
+            </h2>
+            <p>
+              Strategi pemasaran yang kokoh terbentuk saat konten praktisi memperkuat reputasi brand, diindeks sebagai rujukan oleh mesin AI dan search engine, lalu diskalakan melalui iklan berbayar secara presisi.
+            </p>
           </div>
+
+          <!-- Bagian Bagikan Artikel -->
+          <div class="mt-12 pt-6 border-t border-slate-800 flex flex-wrap items-center justify-between gap-4">
+            <span class="text-xs font-semibold text-slate-400">Bagikan artikel ini:</span>
+            <div class="flex items-center gap-2">
+              <a href="https://api.whatsapp.com/send?text=Menata%20Ulang%20Ekosistem%20Pemasaran%20https://fernandesputra.my.id/artikel/praktisi-digital-marketing-medan.html" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-emerald-500/10 text-emerald-400 hover:bg-emerald-500 hover:text-white flex items-center justify-center text-sm transition-colors border border-emerald-500/20">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://fernandesputra.my.id/artikel/praktisi-digital-marketing-medan.html" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-blue-500/10 text-blue-400 hover:bg-blue-600 hover:text-white flex items-center justify-center text-sm transition-colors border border-blue-500/20">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+        </article>
+      </main>
+
+      <!-- RIGHT COLUMN: SIDEBAR PROFIL & NAVIGASI ARTIKEL -->
+      <aside class="lg:col-span-4 space-y-6">
+
+        <!-- Kartu Profil Penulis -->
+        <div class="glass-sidebar rounded-2xl p-6 border border-slate-800/80">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="/profil.png" alt="Fernandes Putra" class="w-14 h-14 rounded-xl object-cover border border-slate-700/80 shadow-md">
+            <div>
+              <h3 class="text-sm font-bold text-white">Fernandes Putra Pasaribu, S.Kom.</h3>
+              <p class="text-xs text-blue-400 font-medium">Head of Digital Marketing</p>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-5">
+            Praktisi digital marketing berbasis di Medan dengan spesialisasi paid acquisition (Meta/Google Ads), strategi SEO & AEO, serta automasi alur kerja pemasaran.
+          </p>
+          <a href="/" class="w-full py-2.5 px-4 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold flex items-center justify-center gap-2 transition-all shadow-lg shadow-blue-600/20">
+            <i class="fa-solid fa-briefcase text-[11px]"></i> Lihat Portofolio
+          </a>
         </div>
-        <a href="https://fernandesputra.my.id" class="px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold transition-colors shadow-lg shadow-blue-600/20">
-          Kunjungi Portofolio
-        </a>
-      </div>
 
-    </article>
-  </main>
+        <!-- Kartu Artikel Lainnya -->
+        <div class="glass-sidebar rounded-2xl p-6 border border-slate-800/80">
+          <h3 class="text-xs font-bold text-slate-300 uppercase tracking-wider mb-4 flex items-center gap-2">
+            <i class="fa-solid fa-newspaper text-blue-400"></i> Artikel Lainnya
+          </h3>
+          <ul class="space-y-4">
+            <li>
+              <a href="sierra-award.html" class="group block">
+                <span class="text-[11px] text-slate-500 block mb-1">Prestasi & Industri</span>
+                <span class="text-xs font-semibold text-slate-300 group-hover:text-blue-400 transition-colors line-clamp-2">
+                  Bungsuland Property Raih Penghargaan Lewat Proyek Perumahan Bungsu Sierra
+                </span>
+              </a>
+            </li>
+            <li class="pt-3 border-t border-slate-800/60">
+              <a href="iklan-properti.html" class="group block">
+                <span class="text-[11px] text-slate-500 block mb-1">Meta & TikTok Ads</span>
+                <span class="text-xs font-semibold text-slate-300 group-hover:text-blue-400 transition-colors line-clamp-2">
+                  Optimasi Funnel Iklan Berbayar untuk Industri Properti di Pasar Medan
+                </span>
+              </a>
+            </li>
+            <li class="pt-3 border-t border-slate-800/60">
+              <a href="automasi-ai.html" class="group block">
+                <span class="text-[11px] text-slate-500 block mb-1">Automasi & AI</span>
+                <span class="text-xs font-semibold text-slate-300 group-hover:text-blue-400 transition-colors line-clamp-2">
+                  Memanfaatkan AI & Workflow Otomatis untuk Efisiensi Skala Konten Digital
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
 
   <!-- FOOTER -->
   <footer class="border-t border-slate-800/80 bg-[#060913] py-8 text-center text-xs text-slate-500 mt-12">
