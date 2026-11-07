@@ -1,128 +1,235 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="id" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Praktisi Digital Marketing Medan: Seni Memimpin Eksekusi Lapangan & Tim Kreatif</title>
   <meta name="description" content="Bagaimana praktisi digital marketing Medan mengelola eksekusi lapangan? Simak peran koordinasi tim, directing acara, dan sinkronisasi kampanye di sini.">
   <link rel="canonical" href="https://fernandesputra.my.id/artikel/praktisi-digital-marketing-medan-manajemen-tim-lapangan.html">
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-[#0b1120] text-gray-200 antialiased font-sans">
 
-  <!-- Navigasi Sederhana -->
-  <header class="border-b border-gray-800 bg-[#0f172a]/80 backdrop-blur sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto px-4 h-16 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-3 group">
-        <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center font-bold text-white shadow-md">F</div>
+  <!-- FAVICON -->
+  <link rel="icon" type="image/png" sizes="48x48" href="/favicon.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="/favicon.png">
+  <link rel="apple-touch-icon" href="/favicon.png">
+
+  <!-- Tailwind CSS & FontAwesome -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#060913',
+              card: 'rgba(15, 23, 42, 0.65)',
+              accent: '#3b82f6'
+            }
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #060913;
+    }
+    .glass-card {
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(51, 65, 85, 0.4);
+    }
+  </style>
+</head>
+<body class="text-slate-300 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header Navigasi -->
+  <header class="border-b border-slate-800/80 bg-[#060913]/90 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-xl bg-blue-600 flex items-center justify-center font-bold text-white text-lg shadow-lg shadow-blue-500/20">F</div>
         <div>
-          <span class="font-bold text-white text-sm block leading-tight">Fernandes Putra</span>
-          <span class="text-[10px] text-gray-400 uppercase tracking-wider block">Praktisi Digital Marketing</span>
+          <span class="font-bold text-white text-base block leading-tight">Fernandes Putra</span>
+          <span class="text-xs text-slate-400 uppercase tracking-wider block font-medium">Praktisi Digital Marketing</span>
         </div>
       </a>
-      <a href="/artikel/" class="text-sm text-gray-300 hover:text-blue-400 font-medium transition">&larr; Semua Artikel</a>
+      <a href="/artikel/" class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-800/80 hover:bg-slate-700/80 text-xs font-semibold text-slate-200 border border-slate-700/60 transition">
+        <i class="fa-solid fa-arrow-left text-[11px]"></i> Kembali ke Artikel
+      </a>
     </div>
   </header>
 
-  <!-- Konten Utama -->
-  <main class="max-w-3xl mx-auto px-4 py-12">
-    
-    <div class="mb-6">
-      <span class="inline-block px-3 py-1 text-xs font-semibold rounded-full bg-blue-900/50 text-blue-400 border border-blue-800/60 mb-3">
-        Digital Marketing
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight mb-4">
-        Bukan Sekadar Angka di Dasbor: Mengapa Praktisi Digital Marketing Medan Harus Menguasai Eksekusi Lapangan
-      </h1>
-      <div class="flex items-center gap-4 text-xs text-gray-400 border-b border-gray-800 pb-6">
-        <span>Oleh <strong class="text-gray-200">Fernandes Putra</strong></span>
-        <span>&bull;</span>
-        <span>⏱ 5 Menit Baca</span>
-      </div>
+  <!-- Kontainer Utama (Grid 2 Kolom) -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+      
+      <!-- Kolom Kiri: Artikel Utama (8 Kolom) -->
+      <main class="lg:col-span-8">
+        <div class="glass-card rounded-2xl p-6 sm:p-10 border border-slate-800/80">
+          
+          <!-- Metadata Kategori & Waktu -->
+          <div class="flex flex-wrap items-center gap-3 text-xs text-slate-400 mb-6">
+            <span class="px-3 py-1 rounded-full bg-blue-500/10 text-blue-400 font-semibold border border-blue-500/20">
+              Digital Marketing
+            </span>
+            <span class="flex items-center gap-1.5"><i class="fa-regular fa-clock"></i> 5 Menit Baca</span>
+            <span>&bull;</span>
+            <span>7 November 2026</span>
+          </div>
+
+          <!-- Judul Artikel -->
+          <h1 class="text-2xl sm:text-4xl font-extrabold text-white leading-tight mb-8">
+            Bukan Sekadar Angka di Dasbor: Mengapa Praktisi Digital Marketing Medan Harus Menguasai Eksekusi Lapangan
+          </h1>
+
+          <!-- Gambar Utama / Dokumentasi -->
+          <figure class="mb-8">
+            <img src="../directing-lapangan-fernandes-putra.png" alt="Praktisi Digital Marketing Medan memimpin directing dan koordinasi alur teknis tim Bungsuland Property di lapangan" class="w-full rounded-2xl border border-slate-800/80 shadow-2xl object-cover">
+            <figcaption class="text-xs text-slate-400 mt-3 text-center italic">
+              Momen directing dan koordinasi alur teknis produksi lapangan pada agenda resmi Bungsuland Property.
+            </figcaption>
+          </figure>
+
+          <!-- Isi Konten Artikel -->
+          <div class="space-y-6 text-slate-300 leading-relaxed text-base sm:text-[17px]">
+            <p>
+              Ada anggapan umum bahwa pekerjaan pemasaran digital sepenuhnya berputar di balik layar komputer. Aktivitas harian kerap diasosiasikan sebatas membaca grafik <em>Cost Per Click</em> (CPC), mengatur segmentasi audiens di Meta Ads Manager, mengoptimasi kata kunci SEO, atau mengutak-atik kode pelacak analitik.
+            </p>
+
+            <p>
+              Bagi seorang <strong class="text-white">praktisi digital marketing Medan</strong>, analisis data di depan layar memang fondasi utama. Namun, data hanyalah hipotesis sampai strategi tersebut diuji langsung di lapangan.
+            </p>
+
+            <p>
+              Ketika kampanye pemasaran beralih dari fase daring menuju agenda tatap muka—seperti peluncuran proyek properti, seremoni akad perbankan, maupun konferensi kemitraan resmi—peran tim pemasaran bertransformasi menjadi pengarah eksekusi (<em>show directing</em>) yang menuntut ketenangan, kecepatan berpikir, dan kepemimpinan taktis.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white pt-6 border-t border-slate-800/80">
+              Menjembatani Visi Strategis Menjadi Realitas Lapangan
+            </h2>
+
+            <p>
+              Merancang pesan promosi di media sosial memerlukan pendekatan visual dan narasi yang matang. Namun, memastikan materi tersebut hidup secara konsisten di panggung nyata membutuhkan koordinasi teknis yang matang.
+            </p>
+
+            <p>
+              Saat memimpin jalannya sebuah agenda besar di lapangan, fokus utama tertuju pada keselarasan eksekusi:
+            </p>
+
+            <ul class="list-disc pl-6 space-y-3">
+              <li>
+                <strong class="text-white">Pengarahan Tim Produksi & Konten:</strong> Tim videografer dan fotografer harus mengetahui titik-titik krusial yang perlu diabadikan. Tanpa arahan yang jelas mengenai tujuan akhir kampanye, dokumentasi yang dihasilkan sering kali kehilangan konteks nilai jual (<em>key selling points</em>) yang dibutuhkan untuk materi promosi lanjutan.
+              </li>
+              <li>
+                <strong class="text-white">Manajemen Waktu dan Dinamika Panggung:</strong> Protokol acara sering kali berubah karena kendala teknis atau penyesuaian jadwal tamu kehormatan. Pengarah lapangan dituntut membuat keputusan cepat dalam hitungan detik agar audiens tetap merasakan transisi yang rapi.
+              </li>
+            </ul>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white pt-6 border-t border-slate-800/80">
+              Integrasi Online-to-Offline (O2O) yang Terukur
+            </h2>
+
+            <p>
+              Keberhasilan sebuah acara luring tidak berhenti saat tamu undangan meninggalkan ruangan. Bagi seorang praktisi pemasaran digital, acara lapangan adalah pabrik konten (<em>content hub</em>).
+            </p>
+
+            <p>
+              Semua interaksi, testimoni pembeli, sambutan jajaran pimpinan, dan momen penting yang ditangkap di lapangan akan diolah kembali menjadi aset digital berkonversi tinggi. Rekaman visual tersebut kemudian didistribusikan melalui kampanye iklan terarah, video pendek TikTok, hingga artikel dokumentasi resmi perusahaan.
+            </p>
+
+            <p>
+              Ketika strategi digital dan eksekusi lapangan berjalan beriringan, kredibilitas sebuah merek akan terbangun jauh lebih kokoh dibandingkan promosi yang hanya mengandalkan materi grafis digital statis.
+            </p>
+
+            <h2 class="text-xl sm:text-2xl font-bold text-white pt-6 border-t border-slate-800/80">
+              Kolaborasi dan Penguatan Kapasitas Tim
+            </h2>
+
+            <p>
+              Memimpin di lapangan pada dasarnya adalah tentang kepercayaan. Seorang pengarah teknis tidak bekerja sendirian, melainkan bertindak sebagai konduktor yang memastikan setiap anggota tim memahami perannya dengan presisi.
+            </p>
+
+            <p>
+              Memberikan arahan yang terstruktur kepada talenta muda, videografer, desainer grafis, hingga staf pendukung operasional adalah bagian penting dari proses transfer keahlian. Dengan membangun alur kerja yang teratur, tim tidak hanya mampu menyelesaikan pekerjaan tepat waktu, tetapi juga terbiasa menjaga standar kualitas dalam setiap proyek yang dipercayakan kepada mereka.
+            </p>
+          </div>
+
+          <!-- Bagikan Artikel (WhatsApp & LinkedIn) -->
+          <div class="mt-10 pt-6 border-t border-slate-800/80 flex items-center justify-between">
+            <span class="text-xs text-slate-400">Bagikan artikel ini:</span>
+            <div class="flex items-center gap-2">
+              <a href="https://api.whatsapp.com/send?text=Bukan%20Sekadar%20Angka%20di%20Dasbor:%20Mengapa%20Praktisi%20Digital%20Marketing%20Medan%20Harus%20Menguasai%20Eksekusi%20Lapangan%20https://fernandesputra.my.id/artikel/praktisi-digital-marketing-medan-manajemen-tim-lapangan.html" target="_blank" class="w-9 h-9 rounded-xl bg-slate-800/80 hover:bg-emerald-600/20 text-slate-300 hover:text-emerald-400 border border-slate-700/60 flex items-center justify-center transition">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://fernandesputra.my.id/artikel/praktisi-digital-marketing-medan-manajemen-tim-lapangan.html" target="_blank" class="w-9 h-9 rounded-xl bg-slate-800/80 hover:bg-blue-600/20 text-slate-300 hover:text-blue-400 border border-slate-700/60 flex items-center justify-center transition">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </main>
+
+      <!-- Kolom Kanan: Sidebar Profil & Artikel Lainnya (4 Kolom) -->
+      <aside class="lg:col-span-4 space-y-6 lg:sticky lg:top-28">
+        
+        <!-- Kartu Profil Penulis -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800/80">
+          <div class="flex items-center gap-4 mb-4">
+            <img src="../profil.png" alt="Fernandes Putra Pasaribu, S.Kom." class="w-14 h-14 rounded-xl object-cover border border-slate-700">
+            <div>
+              <h3 class="text-base font-bold text-white leading-tight">Fernandes Putra Pasaribu, S.Kom.</h3>
+              <span class="text-xs text-blue-400 font-medium">Praktisi Digital Marketing</span>
+            </div>
+          </div>
+          <p class="text-xs text-slate-400 leading-relaxed mb-6">
+            Praktisi digital marketing berbasis di Medan dengan spesialisasi paid acquisition (Meta/Google Ads), strategi SEO & AEO, serta automasi alur kerja pemasaran.
+          </p>
+          <a href="/" class="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold shadow-lg shadow-blue-500/20 transition">
+            <i class="fa-solid fa-briefcase"></i> Lihat Portofolio
+          </a>
+        </div>
+
+        <!-- Widget Artikel Lainnya -->
+        <div class="glass-card rounded-2xl p-6 border border-slate-800/80">
+          <h3 class="text-xs font-bold text-slate-300 tracking-wider uppercase mb-5 flex items-center gap-2">
+            <i class="fa-regular fa-newspaper text-blue-400"></i> ARTIKEL LAINNYA
+          </h3>
+          <div class="space-y-5 text-left">
+            <div>
+              <span class="text-[10px] text-amber-400 font-semibold uppercase block mb-1">Prestasi & Industri</span>
+              <a href="/artikel/sierra-award.html" class="text-xs font-bold text-slate-200 hover:text-blue-400 transition leading-snug block">
+                Bungsuland Property Raih Penghargaan Lewat Proyek Perumahan Bungsu Sierra
+              </a>
+            </div>
+            <div class="border-t border-slate-800/80 pt-4">
+              <span class="text-[10px] text-blue-400 font-semibold uppercase block mb-1">Meta & TikTok Ads</span>
+              <a href="/artikel/iklan-properti.html" class="text-xs font-bold text-slate-200 hover:text-blue-400 transition leading-snug block">
+                Optimasi Funnel Iklan Berbayar untuk Industri Properti di Pasar Medan
+              </a>
+            </div>
+            <div class="border-t border-slate-800/80 pt-4">
+              <span class="text-[10px] text-purple-400 font-semibold uppercase block mb-1">Automasi & AI</span>
+              <a href="/artikel/automasi-ai.html" class="text-xs font-bold text-slate-200 hover:text-blue-400 transition leading-snug block">
+                Memanfaatkan AI & Workflow Otomatis untuk Efisiensi Skala Konten Digital
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </aside>
+
     </div>
+  </div>
 
-    <!-- Foto Dokumentasi Lapangan -->
-    <figure class="mb-10">
-      <img src="../directing-lapangan-fernandes-putra.png" alt="Praktisi Digital Marketing Medan mengarahkan tim produksi dan eksekusi lapangan" class="w-full rounded-2xl border border-gray-800 shadow-xl object-cover">
-      <figcaption class="text-xs text-gray-400 mt-3 text-center">
-        Momen directing dan koordinasi alur teknis tim Bungsuland Property di lapangan.
-      </figcaption>
-    </figure>
-
-    <!-- Paragraf Isi -->
-    <article class="space-y-6 text-gray-300 leading-relaxed text-base">
-      <p>
-        Ada anggapan umum bahwa pekerjaan pemasaran digital sepenuhnya berputar di balik layar komputer. Aktivitas harian kerap diasosiasikan sebatas membaca grafik <em>Cost Per Click</em> (CPC), mengatur segmentasi audiens di Meta Ads Manager, mengoptimasi kata kunci SEO, atau mengutak-atik kode pelacak analitik.
-      </p>
-
-      <p>
-        Bagi seorang <strong class="text-white">praktisi digital marketing Medan</strong>, analisis data di depan layar memang fondasi utama. Namun, data hanyalah hipotesis sampai strategi tersebut diuji langsung di lapangan.
-      </p>
-
-      <p>
-        Ketika kampanye pemasaran beralih dari fase daring menuju agenda tatap muka—seperti peluncuran proyek properti, seremoni akad perbankan, maupun konferensi kemitraan resmi—peran tim pemasaran bertransformasi menjadi pengarah eksekusi (<em>show directing</em>) yang menuntut ketenangan, kecepatan berpikir, dan kepemimpinan taktis.
-      </p>
-
-      <h2 class="text-2xl font-bold text-white pt-4 border-t border-gray-800/80">
-        Menjembatani Visi Strategis Menjadi Realitas Lapangan
-      </h2>
-      
-      <p>
-        Merancang pesan promosi di media sosial memerlukan pendekatan visual dan narasi yang matang. Namun, memastikan materi tersebut hidup secara konsisten di panggung nyata membutuhkan koordinasi teknis yang matang.
-      </p>
-
-      <p>
-        Saat memimpin jalannya sebuah agenda besar di lapangan, fokus utama tertuju pada keselarasan eksekusi:
-      </p>
-
-      <ul class="list-disc pl-6 space-y-3">
-        <li>
-          <strong class="text-white">Pengarahan Tim Produksi & Konten:</strong> Tim videografer dan fotografer harus mengetahui titik-titik krusial yang perlu diabadikan. Tanpa arahan yang jelas mengenai tujuan akhir kampanye, dokumentasi yang dihasilkan sering kali kehilangan konteks nilai jual (<em>key selling points</em>) yang dibutuhkan untuk materi promosi lanjutan.
-        </li>
-        <li>
-          <strong class="text-white">Manajemen Waktu dan Dinamika Panggung:</strong> Protokol acara sering kali berubah karena kendala teknis atau penyesuaian jadwal tamu kehormatan. Pengarah lapangan dituntut membuat keputusan cepat dalam hitungan detik agar audiens tetap merasakan transisi yang rapi.
-        </li>
-      </ul>
-
-      <h2 class="text-2xl font-bold text-white pt-4 border-t border-gray-800/80">
-        Integrasi Online-to-Offline (O2O) yang Terukur
-      </h2>
-      
-      <p>
-        Keberhasilan sebuah acara luring tidak berhenti saat tamu undangan meninggalkan ruangan. Bagi seorang praktisi pemasaran digital, acara lapangan adalah pabrik konten (<em>content hub</em>).
-      </p>
-
-      <p>
-        Semua interaksi, testimoni pembeli, sambutan jajaran pimpinan, dan momen penting yang ditangkap di lapangan akan diolah kembali menjadi aset digital berkonversi tinggi. Rekaman visual tersebut kemudian didistribusikan melalui kampanye iklan terarah, video pendek TikTok, hingga artikel dokumentasi resmi perusahaan.
-      </p>
-
-      <p>
-        Ketika strategi digital dan eksekusi lapangan berjalan beriringan, kredibilitas sebuah merek akan terbangun jauh lebih kokoh dibandingkan promosi yang hanya mengandalkan materi grafis digital statis.
-      </p>
-
-      <h2 class="text-2xl font-bold text-white pt-4 border-t border-gray-800/80">
-        Kolaborasi dan Penguatan Kapasitas Tim
-      </h2>
-      
-      <p>
-        Memimpin di lapangan pada dasarnya adalah tentang kepercayaan. Seorang pengarah teknis tidak bekerja sendirian, melainkan bertindak sebagai konduktor yang memastikan setiap anggota tim memahami perannya dengan presisi.
-      </p>
-
-      <p>
-        Memberikan arahan yang terstruktur kepada talenta muda, videografer, desainer grafis, hingga staf pendukung operasional adalah bagian penting dari proses transfer keahlian. Dengan membangun alur kerja yang teratur, tim tidak hanya mampu menyelesaikan pekerjaan tepat waktu, tetapi juga terbiasa menjaga standar kualitas dalam setiap proyek yang dipercayakan kepada mereka.
-      </p>
-    </article>
-
-    <!-- Tombol Hubungi / CTA -->
-    <div class="mt-12 p-6 rounded-2xl bg-[#111827] border border-gray-800 text-center">
-      <h3 class="text-lg font-bold text-white mb-2">Ingin Berdiskusi Seputar Pertumbuhan Bisnis & Eksekusi Kampanye?</h3>
-      <p class="text-sm text-gray-400 mb-4">Mulai dari setup performa ads, optimasi SEO, hingga strategi aktivasi brand di lapangan.</p>
-      <a href="https://wa.me/6281269415516" target="_blank" class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-medium px-5 py-2.5 rounded-xl transition text-sm">
-        Hubungi via WhatsApp &rarr;
-      </a>
-    </div>
-
-  </main>
+  <!-- Footer -->
+  <footer class="border-t border-slate-800/80 py-6 text-center text-xs text-slate-500 mt-12">
+    &copy; 2026 Fernandes Putra Pasaribu, S.Kom. All rights reserved.
+  </footer>
 
 </body>
 </html>
